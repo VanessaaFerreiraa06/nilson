@@ -7,9 +7,9 @@ function inserirNumero() {
     
     if (!isNaN(numero)) {
         vetor[vetorTamanho] = numero; 
-        vetorTamanho++; // Incrementa o tamanho do vetor
+        vetorTamanho++; 
         
-        mostrarVetor('listaOriginal', vetor); // Atualiza a exibição da lista original
+        mostrarVetor('listaOriginal', vetor); 
         
         document.getElementById("numberInput").value = "";
         document.getElementById("numberInput").focus();
@@ -23,16 +23,16 @@ function ordenarVetor() {
     let n = vetorTamanho;
     let ordenado = [];
     
-    // Copiar o vetor manualmente para não alterar o original
+    
     for (let i = 0; i < n; i++) {
         ordenado[i] = vetor[i];
     }
     
-    // Implementação do algoritmo de ordenação bolha
+    
     for (let i = 0; i < n - 1; i++) {
         for (let j = 0; j < n - 1 - i; j++) {
             if (ordenado[j] > ordenado[j + 1]) {
-                // Troca manual
+                
                 let temp = ordenado[j];
                 ordenado[j] = ordenado[j + 1];
                 ordenado[j + 1] = temp;
@@ -40,12 +40,12 @@ function ordenarVetor() {
         }
     }
     
-    mostrarVetor('listaOrdenada', ordenado); // Atualiza a exibição da lista ordenada
+    mostrarVetor('listaOrdenada', ordenado); 
 }
 
-// Função para mostrar o vetor em uma div
+
 function mostrarVetor(divId, vetorParaMostrar) {
-    let resultado = ""; // Variável para armazenar a string de exibição
+    let resultado = ""; 
     
   
     for (let i = 0; i < vetorTamanho; i++) {

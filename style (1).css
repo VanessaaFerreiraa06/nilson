@@ -81,13 +81,13 @@ button:active {
     min-height: 40px;
 }
 
-.vaiporra div {
+.lista1 div {
     color: #333;
     font-size: 16px;
     font-weight: bold;
 }
 
-.vaiporra div.empty {
+.lista1 div.empty {
     color: #888;
     font-style: italic;
 }
